@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int64_t find_element_in_vector_of_integers(int element, vector <int>& vector_of_integers)
+int64_t find_element_in_vector_of_integers(const int &element, vector <int>& vector_of_integers)
 {
 	// Define an iterator pointing to the element in vector of integers
 	vector<int>::iterator it = find(vector_of_integers.begin(), vector_of_integers.end(), element); // O(N)
