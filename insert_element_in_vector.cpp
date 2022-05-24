@@ -43,8 +43,8 @@ int main()
 	vector_of_integers.insert(vector_of_integers.begin() + 3, new_vector_to_be_inserted.begin(), new_vector_to_be_inserted.end()); // O(N+M) => M is size of elements to be inserted
 
 	// Printing out all the elements of vector of integers - Method 4
-	for (int i = 0; i < vector_of_integers.size(); i++)
-		cout << vector_of_integers.at(i) << ' '; // 1 2 3 4 4 4 4 4 4 4 5 6 7 8 9 10
+	for (int i = 0; i < vector_of_integers.size(); i++) // vector_of_integers.size() O(1)
+		cout << vector_of_integers.at(i) << ' '; // 1 2 3 4 4 4 4 4 4 4 5 6 7 8 9 10 // vector_of_integers.at(i) O(1)
 	cout << endl << endl;
 
 	return 0;
