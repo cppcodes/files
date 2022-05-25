@@ -20,11 +20,11 @@ int main()
 	cout << vector_of_integers.back() << endl; // 7 // O(1)
 
 	cout << vector_of_integers[2] << endl; // 3 // O(1)
-	cout << vector_of_integers[3] << endl; // 4 // O(1)
+	cout << vector_of_integers.at(3) << endl; // 4 // O(1)
 
 	vector<int> new_vector_of_integers{ 7,16 };
 	new_vector_of_integers[0] = -1; // O(1)
-	new_vector_of_integers[1] = -3; // O(1)
+	new_vector_of_integers.at(1) = -3; // O(1)
 	print_vector(new_vector_of_integers); // -1 -3
 
 	new_vector_of_integers = vector_of_integers; // O(N)
